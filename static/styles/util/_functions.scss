@@ -1,0 +1,12 @@
+@use 'sass:math';
+
+@function rem($pixel){
+  /* Checks for syntactical errors */
+  @if math.is-untiless($pixel){
+    @error 'Use a number only.';
+  }
+  /* Else divides $pixel by 16 to return rems */
+  @else{
+    @return math.div($pixel, 16) + rem;    
+  }
+}

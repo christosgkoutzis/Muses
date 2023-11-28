@@ -1,0 +1,33 @@
+@use 'functions' as f;
+
+// 700px, 900px, 1440px
+
+/* SASS map for max-width breakpoints */
+$breakpoints-down: (
+  "medium": f.rem(700),
+  "large": f.rem(900),
+  "xlarge": f.rem(1440),
+);
+
+// 699.98px, 899.98px, 1439.98px
+
+/* SASS map for min-width breakpoints */
+$breakpoints-up: (
+  "small": f.rem(699.98),
+  "medium": f.rem(899.98),
+  "large": f.rem(1439.98),
+);
+
+/* SASS mixin to use max-width breakpoints in media queries */
+@mixin breakpoint($size) {
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content
+  }
+};
+
+/* SASS mixin to use min-width breakpoints in media queries */
+@mixin breakpoint($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content
+  }
+};

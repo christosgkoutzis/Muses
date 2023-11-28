@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %} New Exhibition Form {% endblock %}
+
+{% block main %}
+<form action="/new_exhibition" method="post">
+  <div class="mb-3">
+      <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="title" name="title" placeholder="Title" type="text">
+  </div>
+  <div class="mb-3">
+      <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="featured_image" name="featured_image" placeholder="Featured Image" type="text">
+  </div>
+  <div class="mb-3">
+    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="description" name="description" placeholder="Description" type="text">
+  </div>
+  <div class="mb-3">
+    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="exhibition_date" name="exhibition_date" placeholder="Exhibition Date" type="text">
+  </div>
+  <div class="mb-3">
+    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="slug" name="slug" placeholder="Slug" type="text">
+  </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,28 @@
+@use '../util/';
+
+h1,
+h2,
+h3{
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;  
+}
+
+h1{
+  /* Clamp CSS function restricts min and max value the font-size can get */
+  font-size: clamp(util.rem(28), util.rem(16) + 2vw, util.rem(40));
+}
+
+h2{
+  /* Clamp CSS function restricts min and max value the font-size can get */
+  font-size: clamp(util.rem(22), util.rem(14) + 1.5vw, util.rem(36));
+}
+
+p{
+  margin-top: 0;
+  font-size: util.rem(16);
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}

@@ -1,0 +1,26 @@
+/* SASS module to load SASS variables from other path */
+@use '../util';
+
+html{
+  /* Ensures that the total width or height of an element doesn't change when adding padding or margins */ 
+  box-sizing: border-box;
+  /* Accessibility reasons */
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+/* Wildcard (all elements) */
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  /* Using namespace to use the SASS variable */
+  font-family: util.$par-font;
+  background-color: var(--main-white);
+  color: var(--main-black);
+}
