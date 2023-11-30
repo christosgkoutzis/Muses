@@ -1,5 +1,3 @@
-import os
-import sys
 from flask import Flask, redirect, render_template, request, session
 from flask_session import Session
 from cs50 import SQL
@@ -108,37 +106,3 @@ def logout():
 
     # Redirect user to login form
     return redirect("/")
-
-@app.route("/register", methods=["GET", "POST"])
-def register():
-    """Register user"""
-
-    # Forget any user_id
-    session.clear()
-
-    # User reached route via POST (as by submitting a form via POST)
-    if request.method == "POST":
-        
-        # Generates a hash of the inputed password
-        password = request.form.get("password")
-        hash_password = generate_password_hash(password)
-
-        # Adds a new row in users table of the database
-        db.execute(
-            "INSERT INTO admin_credentials (username, password) VALUES (?, ?)",
-            request.form.get("username"),
-            hash_password,
-        )
-
-        # Remember which user has logged in
-        session_dict = db.execute(
-            "SELECT * FROM admin_credentials WHERE username = ?", request.form.get("username")
-        )
-        session["admin_id"] = session_dict[0]["id"]
-
-        # Redirect user to home page
-        return redirect("/admin")
-
-    # User reached route via GET (as by clicking a link or via redirect)
-    else:
-        return render_template("register.html")
