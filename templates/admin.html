@@ -3,7 +3,7 @@
 {% block title %} Administrator log in {% endblock %}
 
 {% block main %}
-<form action="/admin" method="post" class="w-75 mx-auto">
+<form action="/admin" method="post" class="w-75 mx-auto" id="admin_form" onsubmit="textboxAlert()">
   <div class="mb-3">
       <label for="username" class="form-label">Username</label>
       <input autocomplete="off" autofocus class="form-control" id="username" name="username" placeholder="Admin's username" type="text">

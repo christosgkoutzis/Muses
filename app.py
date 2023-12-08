@@ -46,6 +46,25 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
+# Exhibitions archive route
+@app.route('/exhibitions')
+def exhibitions():
+  archive = db.execute("SELECT * FROM exhibitions")
+  return render_template("exhibitions.html", archive=archive)
+
+# Single exhibition route
+@app.route('/exhibitions/<int:id>')
+def single(id):
+   # Each query is declared as a variable for debugging reasons
+   exhibition = db.execute("SELECT * FROM exhibitions WHERE id = ?", id)
+   title = exhibition[0]["title"]
+   description = exhibition[0]["description"]
+   featured_image = exhibition[0]["featured_image"]
+   exhibition_date = exhibition[0]["exhibition_date"]
+   if len(exhibition) != 1:
+      return render_template("404.html"), 404
+   return render_template("exhibition.html", title=title, description=description, featured_image=featured_image, exhibition_date=exhibition_date)
+
 @app.route('/new_exhibition', methods=["GET", "POST"])
 @login_required
 # Adds a new exhibition to the website through a form
@@ -63,46 +82,40 @@ def new_exhibition():
 
 @app.route("/admin", methods=["GET", "POST"])
 def login():
-    # Forget any id
-    session.clear()
+  # Forget any id
+  session.clear()
 
-    # Admin reached route via POST (as by submitting a form via POST)
-    if request.method == "POST":
-        # Ensure username was submitted
-        if not request.form.get("username"):
-            return render_template('500.html'), 500
+  # Admin reached route via POST (as by submitting a form via POST)
+  if request.method == "POST":
+      if not request.form.get("username") or not request.form.get("password"):
+        return render_template('admin.html')
+      # Query database for admin's username
+      rows = db.execute(
+          "SELECT * FROM admin_credentials WHERE username = ?", request.form.get("username")
+      )
 
-        # Ensure password was submitted
-        elif not request.form.get("password"):
-            return render_template('500.html'), 500
+      # Ensure username exists and password is correct
+      if len(rows) != 1 or not check_password_hash(
+          rows[0]["password"], request.form.get("password")
+      ):
+          return render_template('500.html'), 500
 
-        # Query database for admin's username
-        rows = db.execute(
-            "SELECT * FROM admin_credentials WHERE username = ?", request.form.get("username")
-        )
+      # Remember which user has logged in
+      session["admin_id"] = rows[0]["id"]
 
-        # Ensure username exists and password is correct
-        if len(rows) != 1 or not check_password_hash(
-            rows[0]["password"], request.form.get("password")
-        ):
-            return render_template('500.html'), 500
+      # Redirect admin to new exhibitions form
+      return redirect("/new_exhibition")
 
-        # Remember which user has logged in
-        session["admin_id"] = rows[0]["id"]
-
-        # Redirect admin to new exhibitions form
-        return redirect("/new_exhibition")
-
-    # User reached route via GET (as by clicking a link or via redirect)
-    else:
-        return render_template("admin.html")
+  # User reached route via GET (as by clicking a link or via redirect)
+  else:
+      return render_template("admin.html")
 
 
 @app.route("/logout")
 def logout():
-    
-    # Forget any user_id
-    session.clear()
+  
+  # Forget any user_id
+  session.clear()
 
-    # Redirect user to login form
-    return redirect("/")
+  # Redirect user to login form
+  return redirect("/")
