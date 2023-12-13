@@ -1,2 +1,2 @@
 # Muses
-A website for a contemporary Art Museum located in Athens Greece. It's developed using a Figma design from a UX-UI designer and was used as the final project of CS50x course.
+This is a simplified one page version developed with front-end tools only of the Muses project that is submitted as a final project of the CS50x 2023 course. More information about the full project on the main branch.
