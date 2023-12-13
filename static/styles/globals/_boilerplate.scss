@@ -20,7 +20,7 @@ body{
   padding: 0;
   margin: 0;
   /* Using namespace to use the SASS variable */
-  font-family: util.$par-font;
-  background-color: var(--main-white);
-  color: var(--main-black);
+  font-family: util.$lexend-deca;
+  background-color: var(--bg-white);
+  color: var(--text-black);
 }

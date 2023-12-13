@@ -2,7 +2,7 @@
 
 @function rem($pixel){
   /* Checks for syntactical errors */
-  @if math.is-untiless($pixel){
+  @if not math.is-unitless($pixel){
     @error 'Use a number only.';
   }
   /* Else divides $pixel by 16 to return rems */
