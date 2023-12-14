@@ -28,8 +28,8 @@
         <div class="container-fluid col-xl-6 col-lg-7 col-md-8">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link mx-xl-2 mx-lg-1" href="#"><h4>Visit</h4></a>
-              <a class="nav-link mx-xl-2 mx-lg-1" href="#"><h4>Tickets</h4></a>
+              <a class="nav-link mx-xl-2 mx-lg-1" href="#visit"><h4>Visit</h4></a>
+              <a class="nav-link mx-xl-2 mx-lg-1" href="#tickets"><h4>Tickets</h4></a>
               <a class="nav-link mx-xl-2 mx-lg-1" href="#"><h4>The Museum</h4></a>
               <a class="nav-link mx-xl-2 mx-lg-1" href="#"><h4>Exhibitions</h4></a>
               <a class="nav-link contact mx-xl-2 mx-lg-1" href="#"><h4 class="px-3">Contact</h4></a>
@@ -40,7 +40,91 @@
       <img class="card-img" src="static/images/header-cover.png" alt="header-cover" width="71%" height="71%">
     </header>
     <main>
-      
+      <section id="visit" name="visit" class="text-center container-fluid">
+        <div class="section-title row align-items-center">
+          <div class="section-title__line col-1"></div>
+          <div class="section-title__heading col-1"><h2>VISIT</h2></div>
+        </div>
+        <div class="visit-subtitles row align-items-center text-start">
+          <div class="regular-schedule__title col-lg-6 col-sm-12"><h4>Regular Schedule</h4></div>
+          <div class="special-cases__title col-lg-6 col-sm-12"><h4>Special Cases</h4></div>
+        </div>
+        <div class="row visit-content text-start">
+          <div class="regular-schedule col-lg-6 col-sm-12">
+            <div class="regular-schedule__content">
+              <div class="regular-schedule__content__schedule row">
+                <div class="regular-schedule__content__schedule__day col-6"><p>Monday</p></div>
+                <div class="regular-schedule__content__schedule__hours col-6"><p>Closed</p></div>
+              </div>
+              <div class="regular-schedule__content__schedule row">
+                <div class="regular-schedule__content__schedule__day col-6"><p>Tuesday - Wednesday</p></div>
+                <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
+              </div>
+              <div class="regular-schedule__content__schedule row">
+                <div class="regular-schedule__content__schedule__day col-6"><p>Thursday</p></div>
+                <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 8:00 pm</p></div>
+              </div>
+              <div class="regular-schedule__content__schedule row">
+                <div class="regular-schedule__content__schedule__day col-6"><p>Friday - Sunday</p></div>
+                <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="special-cases col-lg-6 col-sm-12">
+            <div class="special-cases__content">
+              <div class="special-cases__content__schedule row">
+                <div class="special-cases__content__schedule__day col-5"><p>Closed</p></div>
+                <div class="special-cases__content__schedule__hours col-7"><p>01/01, Orthodox Easter Sunday, 01/05, 25-26/12</p></div>
+              </div>
+              <div class="special-cases__content__schedule row">
+                <div class="special-cases__content__schedule__day col-5"><p>Reduced hours</p></div>
+                <div class="special-cases__content__schedule__hours col-7">
+                  <p>24/12 & 31/12, 9 am - 3 pm.</p>
+                  <p>Orthodox Good Friday, 12 am - 6 pm.</p>
+                  <p>Orthodox Holy Saturday, 9 am - 3 pm.</p>
+                </div>
+              </div>
+              <div class="special-cases__content__schedule row">
+                <div class="special-cases__content__schedule__day col-5"><p>Extended opening hours</p></div>
+                <div class="special-cases__content__schedule__hours col-7"><p>Evenings of the August full moon & European Night of Museums, open until midnight.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section name="tickets" id="tickets" class="text-center container-fluid">
+        <div class="section-title row align-items-center">
+          <div class="section-title__line col-1"></div>
+          <div class="section-title__heading col-1"><h2>TICKETS</h2></div>
+        </div>
+        <div class="tickets__content row align-items-center text-start">
+          <div class="tickets__content__image col-lg-6 col-sm-12">
+            <img src="static/images/tickets.png" alt="tickets-img" width="90%" height="90%">
+          </div>
+          <div class="tickets__content__prices col-lg-6 col-sm-12">
+            <div class="tickets__content__prices__admissions">
+              <div class="tickets__content__prices__admissions__general row">
+                <div class="tickets__content__prices__admissions__general__title col-10"><h4>General admission</h4></div>
+                <div class="tickets__content__prices__admissions__general__price col-2 text-center"><h4>8 €</h4></div>
+              </div>
+              <div class="tickets__content__prices__admissions__reduced row">
+                <div class="tickets__content__prices__admissions__reduced__title col-10">
+                  <h4>Reduced admission</h4>
+                  <p>Aged 13 - 18, university students, groups of 10 visitors or more, aged 65 or older</p>
+                </div>
+                <div class="tickets__content__prices__admissions__reduced__price d-flex align-items-center col-2 justify-content-center"><h4>4 €</h4></div>
+              </div>
+              <div class="tickets__content__prices__admissions__free row">
+                <div class="tickets__content__prices__admissions__free__title col-10">
+                  <h4>Free entrance</h4>
+                  <p>Members of the Greek Parliament, children 12 years old and under, people with disabilities, Greek citizens performing their military service, employees of the Hellenic Ministry of Culture with current working identification card.</p>
+                </div>
+                <div class="tickets__content__prices__admissions__free__price d-flex align-items-center col-2 justify-content-center"><h4>0 €</h4></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-content">
@@ -56,12 +140,12 @@
           <section class="sitemap col-3">
             <h1 class="footer-title">Sitemap</h1>
             <nav class="footer-nav">
-              <a href="#" class="footer-nav__item"><p>Visit</p></a>
+              <a href="#visit" class="footer-nav__item"><p>Visit</p></a>
               <a href="#" class="footer-nav__item"><p>The Museum</p></a>
               <a href="#" class="footer-nav__item"><p>Collections</p></a>
               <a href="#" class="footer-nav__item"><p>Exhibitions</p></a>
               <a href="#" class="footer-nav__item"><p>Contact</p></a>
-              <a href="#" class="footer-nav__item"><p>Tickets</p></a>
+              <a href="#tickets" class="footer-nav__item"><p>Tickets</p></a>
             </nav>
           </section>
           <section class="subscribe col-4">

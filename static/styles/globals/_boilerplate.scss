@@ -24,3 +24,9 @@ body{
   background-color: var(--bg-white);
   color: var(--text-black);
 }
+
+main section{
+  margin-top: 14vh;
+  /* Bypass container-fluid BS width property */
+  width: 89vw !important;
+}
