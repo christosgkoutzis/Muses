@@ -21,18 +21,18 @@
           <a class="navbar-brand">
             <img src="static/images/site-logo.png" alt="Logo" class="d-inline-block align-text-top" height="60px">
           </a>
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="container-fluid col-xl-6 col-lg-7 col-md-8">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link mx-xl-2 mx-lg-1" href="#visit"><h4>Visit</h4></a>
               <a class="nav-link mx-xl-2 mx-lg-1" href="#tickets"><h4>Tickets</h4></a>
-              <a class="nav-link mx-xl-2 mx-lg-1" href="#"><h4>The Museum</h4></a>
+              <a class="nav-link mx-xl-2 mx-lg-1" href="#the-museum"><h4>The Museum</h4></a>
               <a class="nav-link mx-xl-2 mx-lg-1" href="#"><h4>Exhibitions</h4></a>
-              <a class="nav-link contact mx-xl-2 mx-lg-1" href="#"><h4 class="px-3">Contact</h4></a>
+              <a class="nav-link outline-button mx-xl-2 mx-lg-1" href="#"><h4 class="px-3">Contact</h4></a>
             </div>
           </div>
         </div>
@@ -125,6 +125,72 @@
           </div>
         </div>
       </section>
+      <div class="the-museum container-fluid d-flex justify-content-center px-0">
+        <section name="the-museum" id="the-museum" class="text-center container-fluid">
+          <div class="the-museum__content row align-items-end d-flex justify-content-between text-start">
+            <div class="the-museum__content__apps col-lg-5 col-sm-12">
+              <div class="section-title row align-items-center">
+                <div class="section-title__line col-1"></div>
+                <div class="section-title__heading col-6"><h2>THE MUSEUM</h2></div>
+              </div>
+              <div class="row text-start">
+                <p class="the-museum__content__apps__download">Download our app and discover the magic of the art at the museum or anywhere else in the world.</p>
+                <p class="the-museum__content__apps__art-quizzes">Art quizzes, personalized exhibitions suggestions and an international art community are waiting for you.</p>
+              </div>
+              <div class="apps-images-inline row">
+                <div class="col-sm-6 apps-images-inline__googleplay">
+                  <img src="static/images/googleplay.png" alt="googleplay">
+                </div>
+                <div class="col-sm-6 apps-images-inline__appstore">
+                  <img src="static/images/appstore.png" alt="appstore">
+                </div>
+              </div>
+            </div>
+            <div class="the-museum__content__image col-lg-5 col-sm-10">
+              <img src="static/images/the-museum.png" alt="museum-img" width="70%" height="70%">
+            </div>
+          </div>
+        </section>
+        <div class="the-museum__bg">
+          <img src="static/images/the-museum-bg.png" alt="footer-bg" class="card-img">
+        </div>
+      </div>
+      <section name="exhibitions" id="exhibitions" class="exhibitions text-center container-fluid">
+        <div class="section-title row align-items-center">
+          <div class="section-title__line col-1"></div>
+          <div class="section-title__heading col-1"><h2>EXHIBITIONS</h2></div>
+        </div>
+        <div class="exhibitions__content row align-items-center text-start justify-content-between d-flex">
+          <div class="exhibitions__content__description col-lg-4 col-sm-12">
+            <div class="exhibitions__content__description__title">
+              <h3>IMAGINE STARFISH</h3>
+              <p>Enjoy a drink or a traditional meal in our cafe & restaurant overlooking the Acropolis.</p>
+              <p>Our cafe and restaurant are open during the Museum's opening hours.<br />No reservations needed.</p>              
+            </div>
+            <div class="outline-button col-6 text-center">
+                <p class="px-3 py-2">Download preview</p>
+            </div>
+          </div>
+          <div class="exhibitions__content__image col-lg-8 col-sm-12">
+            <img src="static/images/exhibition-1.png" alt="exhibition-1-img" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="exhibitions__content row align-items-center justify-content-between d-flex">
+          <div class="exhibitions__content__image col-lg-8 col-sm-12">
+            <img src="static/images/exhibition-2.png" alt="exhibition-2-img" width="100%" height="100%">
+          </div>
+          <div class="exhibitions__content__description col-lg-4 col-sm-12 text-end" style="text-align-last: right">
+            <div class="exhibitions__content__description__title">
+              <h3>ANOTHER WORLD</h3>
+              <p>Discover  a wide variety of gifts, souvenirs and books, all inspired by the Museum's exhibits.</p>
+              <p>The gift shop is open during the Museum's opening hours.</p>              
+            </div>
+            <div class="outline-button col-6 text-center">
+                <p class="px-3 py-2">Download preview</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-content">
@@ -141,7 +207,7 @@
             <h1 class="footer-title">Sitemap</h1>
             <nav class="footer-nav">
               <a href="#visit" class="footer-nav__item"><p>Visit</p></a>
-              <a href="#" class="footer-nav__item"><p>The Museum</p></a>
+              <a href="#the-museum" class="footer-nav__item"><p>The Museum</p></a>
               <a href="#" class="footer-nav__item"><p>Collections</p></a>
               <a href="#" class="footer-nav__item"><p>Exhibitions</p></a>
               <a href="#" class="footer-nav__item"><p>Contact</p></a>
@@ -176,6 +242,6 @@
           </div>
         </div>
       </div>
-      <img src="static/images/footer-bg.png" alt="footer-bg" class="card-img" width="100%" height="100%">      
+      <img src="static/images/footer-bg.png" alt="footer-bg" class="card-img" width="100%" height="100%">    
     </footer>
   </body>
