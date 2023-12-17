@@ -1,0 +1,20 @@
+.tickets{
+  &__content{
+    &__prices{
+      &__admissions{
+        &__general, &__reduced, &__free{
+          margin-block: 6.53vh;
+          &__title {
+            h4{
+              margin-bottom: 4.3vh;
+            }
+            p{
+              /* Paragraph full alignment */
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+  }
+}

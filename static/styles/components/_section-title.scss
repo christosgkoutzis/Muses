@@ -1,0 +1,13 @@
+.section-title{
+  margin-bottom: 10vh;
+
+  &__line{
+    width: 6.22vw;
+    height: 0.11vh;
+    background-color: var(--text-black);
+  }
+
+  &__heading{
+    letter-spacing: 0.16vw;
+  }
+}

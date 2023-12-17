@@ -1,0 +1,20 @@
+@use '../util';
+
+.apps-images-inline{
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  @include util.breakpoint-up(small){
+    div{
+      width: 33%;
+      padding-inline: 0;
+    }
+    &__googleplay{
+      margin-right: 1.1vw;
+    }
+  }
+
+} 

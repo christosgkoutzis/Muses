@@ -1,0 +1,23 @@
+.the-museum{
+  background-image: url('../../images/the-museum-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-bottom: 20vw;
+
+  &__content{
+
+    &__apps {  
+      p{
+        padding-left: 0;
+        width: 85%;
+      }
+      &__download{
+        margin-bottom: 4.09vh;
+      }
+      &__art-quizzes{
+        margin-bottom: 10vh;
+      }
+    }
+  }
+}
