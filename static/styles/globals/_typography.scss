@@ -22,12 +22,12 @@ h3{
 
 h1{
   /* Clamp CSS function restricts min and max value the font-size can get (supports calc) */
-  font-size: clamp(util.rem(30), util.rem(18) + 1.08vw, util.rem(42));
+  font-size: clamp(util.rem(18), util.rem(14) + 1.08vw, util.rem(42));
   font-weight: 300;
 }
 
 h2{
-  font-size: clamp(util.rem(28), util.rem(16) + 1vw, util.rem(40));
+  font-size: clamp(util.rem(17), 2.02vw, util.rem(40));
   font-weight: 300;
 }
 
@@ -42,7 +42,7 @@ h4{
 }
 
 p{
-  font-size: clamp(util.rem(17), util.rem(9) + 0.6vw, util.rem(24));
+  font-size: clamp(util.rem(8), util.rem(6) + 0.8vw, util.rem(24));
   font-weight: 200;
 }
 

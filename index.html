@@ -31,8 +31,8 @@
               <a class="nav-link mx-xl-2 mx-lg-1" href="#visit"><h4>Visit</h4></a>
               <a class="nav-link mx-xl-2 mx-lg-1" href="#tickets"><h4>Tickets</h4></a>
               <a class="nav-link mx-xl-2 mx-lg-1" href="#the-museum"><h4>The Museum</h4></a>
-              <a class="nav-link mx-xl-2 mx-lg-1" href="#"><h4>Exhibitions</h4></a>
-              <a class="nav-link outline-button mx-xl-2 mx-lg-1" href="#"><h4 class="px-3">Contact</h4></a>
+              <a class="nav-link mx-xl-2 mx-lg-1" href="#exhibitions"><h4>Exhibitions</h4></a>
+              <a class="nav-link outline-button mx-xl-2 mx-lg-1" href="#contact"><h4 class="px-3">Contact</h4></a>
             </div>
           </div>
         </div>
@@ -98,10 +98,10 @@
           <div class="section-title__heading col-1"><h2>TICKETS</h2></div>
         </div>
         <div class="tickets__content row align-items-center text-start">
-          <div class="tickets__content__image col-lg-6 col-sm-12">
+          <div class="tickets__content__image col-md-6 col-sm-12">
             <img src="static/images/tickets.png" alt="tickets-img" width="90%" height="90%">
           </div>
-          <div class="tickets__content__prices col-lg-6 col-sm-12">
+          <div class="tickets__content__prices col-md-6 col-sm-12">
             <div class="tickets__content__prices__admissions">
               <div class="tickets__content__prices__admissions__general row">
                 <div class="tickets__content__prices__admissions__general__title col-10"><h4>General admission</h4></div>
@@ -128,7 +128,7 @@
       <div class="the-museum container-fluid d-flex justify-content-center px-0">
         <section name="the-museum" id="the-museum" class="text-center container-fluid">
           <div class="the-museum__content row align-items-end d-flex justify-content-between text-start">
-            <div class="the-museum__content__apps col-lg-5 col-sm-12">
+            <div class="the-museum__content__apps col-5">
               <div class="section-title row align-items-center">
                 <div class="section-title__line col-1"></div>
                 <div class="section-title__heading col-6"><h2>THE MUSEUM</h2></div>
@@ -138,22 +138,19 @@
                 <p class="the-museum__content__apps__art-quizzes">Art quizzes, personalized exhibitions suggestions and an international art community are waiting for you.</p>
               </div>
               <div class="apps-images-inline row">
-                <div class="col-sm-6 apps-images-inline__googleplay">
+                <div class="col-6 apps-images-inline__googleplay">
                   <img src="static/images/googleplay.png" alt="googleplay">
                 </div>
-                <div class="col-sm-6 apps-images-inline__appstore">
+                <div class="col-6 apps-images-inline__appstore">
                   <img src="static/images/appstore.png" alt="appstore">
                 </div>
               </div>
             </div>
-            <div class="the-museum__content__image col-lg-5 col-sm-10">
+            <div class="the-museum__content__image col-5">
               <img src="static/images/the-museum.png" alt="museum-img" width="70%" height="70%">
             </div>
           </div>
         </section>
-        <div class="the-museum__bg">
-          <img src="static/images/the-museum-bg.png" alt="footer-bg" class="card-img">
-        </div>
       </div>
       <section name="exhibitions" id="exhibitions" class="exhibitions text-center container-fluid">
         <div class="section-title row align-items-center">
@@ -185,9 +182,50 @@
               <p>Discover  a wide variety of gifts, souvenirs and books, all inspired by the Museum's exhibits.</p>
               <p>The gift shop is open during the Museum's opening hours.</p>              
             </div>
-            <div class="outline-button col-6 text-center">
-                <p class="px-3 py-2">Download preview</p>
+            <div class="d-flex justify-content-end">
+              <div class="outline-button col-6 text-center">
+                  <p class="px-3 py-2">Download preview</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section name="contact" id="contact" class="text-center container-fluid contact">
+        <div class="section-title row align-items-center">
+          <div class="section-title__line col-1"></div>
+          <div class="section-title__heading col-1"><h2>CONTACT</h2></div>
+        </div>
+        <div class="contact__content row align-items-center justify-content-between text-start">
+          <div class="contact__content__form col-md-5 col-sm-12">
+            <div class="contact__content__form__title"><h3>REACH US</h3></div>
+            <form class="row g-3 justify-content-between">
+              <div class="col-md-5">
+                <label for="name" class="form-label"><p>Name</p></label>
+                <input type="text" class="form-control rounded-0 border-top-0 border-start-0 border-end-0 ps-0" id="input-name" placeholder="John Doe">
+              </div>
+              <div class="col-md-5 pb-3">
+                <label for="email" class="form-label"><p>Email</p></label>
+                <input type="email" class="form-control rounded-0 border-top-0 border-start-0 border-end-0 ps-0" id="input-email" placeholder="john.doe@gmail.com">
+              </div>
+              <div class="col-12 pb-3">
+                <label for="subject" class="form-label"><p>Subject</p></label>
+                <input type="text" class="form-control rounded-0 border-top-0 border-start-0 border-end-0 ps-0" id="inputAddress" placeholder="Put your subject here.">
+              </div>
+              <div class="col-12">
+                <div class="form-check pb-3">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    <p>I accept the <u>terms and conditions</u>.</p>
+                  </label>
+                </div>
+              </div>
+              <div class= "col-12 text-end">
+                <button type="submit" class="outline-button"><p class="py-1 px-2">Send</p></button>
+              </div>
+            </form>
+          </div>
+          <div class="contact__content__image col-md-5 col-sm-12">
+            <img src="static/images/contact.png" alt="contact-img" width="100%" height="100%">
           </div>
         </div>
       </section>
@@ -208,9 +246,8 @@
             <nav class="footer-nav">
               <a href="#visit" class="footer-nav__item"><p>Visit</p></a>
               <a href="#the-museum" class="footer-nav__item"><p>The Museum</p></a>
-              <a href="#" class="footer-nav__item"><p>Collections</p></a>
-              <a href="#" class="footer-nav__item"><p>Exhibitions</p></a>
-              <a href="#" class="footer-nav__item"><p>Contact</p></a>
+              <a href="#exhibitions" class="footer-nav__item"><p>Exhibitions</p></a>
+              <a href="#contact" class="footer-nav__item"><p>Contact</p></a>
               <a href="#tickets" class="footer-nav__item"><p>Tickets</p></a>
             </nav>
           </section>
@@ -225,7 +262,7 @@
           </section>
           <section class="download col-2">
             <h1 class="footer-title">Download</h1>
-            <div class="container mb-4"><img src="static/images/appstore.png" alt="appstore" width="100%"></div>
+            <div class="mb-4 container"><img src="static/images/appstore.png" alt="appstore" width="100%"></div>
             <div class="container"><img src="static/images/googleplay.png" alt="googleplay" width="100%"></div>
           </section>
         </div>
@@ -242,6 +279,5 @@
           </div>
         </div>
       </div>
-      <img src="static/images/footer-bg.png" alt="footer-bg" class="card-img" width="100%" height="100%">    
     </footer>
   </body>
