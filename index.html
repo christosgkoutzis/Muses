@@ -47,32 +47,34 @@
           <div class="section-title__line col-1"></div>
           <div class="section-title__heading col-1"><h2>VISIT</h2></div>
         </div>
-        <div class="visit-subtitles row align-items-center text-start">
-          <div class="regular-schedule__title col-lg-6 col-sm-12"><h4>Regular Schedule</h4></div>
-          <div class="special-cases__title col-lg-6 col-sm-12"><h4>Special Cases</h4></div>
-        </div>
-        <div class="row visit-content text-start">
-          <div class="regular-schedule col-lg-6 col-sm-12">
-            <div class="regular-schedule__content">
-              <div class="regular-schedule__content__schedule row">
-                <div class="regular-schedule__content__schedule__day col-6"><p>Monday</p></div>
-                <div class="regular-schedule__content__schedule__hours col-6"><p>Closed</p></div>
+        <div class="row">
+          <div class="visit-subtitles col-lg-6 col-12 align-items-center text-start">
+            <div class="regular-schedule__title"><h4>Regular Schedule</h4></div>
+            <div class="visit-content text-start">
+              <div class="regular-schedule">
+                <div class="regular-schedule__content">
+                  <div class="regular-schedule__content__schedule row">
+                    <div class="regular-schedule__content__schedule__day col-6"><p>Monday</p></div>
+                    <div class="regular-schedule__content__schedule__hours col-6"><p>Closed</p></div>
+                  </div>
+                  <div class="regular-schedule__content__schedule row">
+                    <div class="regular-schedule__content__schedule__day col-6"><p>Tuesday - Wednesday</p></div>
+                    <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
+                  </div>
+                  <div class="regular-schedule__content__schedule row">
+                    <div class="regular-schedule__content__schedule__day col-6"><p>Thursday</p></div>
+                    <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 8:00 pm</p></div>
+                  </div>
+                  <div class="regular-schedule__content__schedule row">
+                    <div class="regular-schedule__content__schedule__day col-6"><p>Friday - Sunday</p></div>
+                    <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
+                  </div>
+                </div>
               </div>
-              <div class="regular-schedule__content__schedule row">
-                <div class="regular-schedule__content__schedule__day col-6"><p>Tuesday - Wednesday</p></div>
-                <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
-              </div>
-              <div class="regular-schedule__content__schedule row">
-                <div class="regular-schedule__content__schedule__day col-6"><p>Thursday</p></div>
-                <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 8:00 pm</p></div>
-              </div>
-              <div class="regular-schedule__content__schedule row">
-                <div class="regular-schedule__content__schedule__day col-6"><p>Friday - Sunday</p></div>
-                <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
-              </div>
-            </div>
+            </div>            
           </div>
-          <div class="special-cases col-lg-6 col-sm-12">
+          <div class="visit-subtitles align-items-center col-lg-6 col-12 text-start">
+            <div class="special-cases__title"><h4>Special Cases</h4></div>
             <div class="special-cases__content">
               <div class="special-cases__content__schedule row">
                 <div class="special-cases__content__schedule__day col-5"><p>Closed</p></div>
@@ -129,8 +131,8 @@
       </section>
       <div class="the-museum container-fluid d-flex justify-content-center px-0">
         <section name="the-museum" id="the-museum" class="text-center container-fluid">
-          <div class="the-museum__content row align-items-end d-flex justify-content-between text-start">
-            <div class="the-museum__content__apps col-5">
+          <div class="the-museum__content row align-items-lg-end align-items-center d-flex justify-content-between text-start">
+            <div class="the-museum__content__apps col-6 col-lg-5">
               <div class="section-title row align-items-center">
                 <div class="section-title__line col-1"></div>
                 <div class="section-title__heading col-6"><h2>THE MUSEUM</h2></div>
@@ -148,8 +150,8 @@
                 </div>
               </div>
             </div>
-            <div class="the-museum__content__image col-5">
-              <img src="static/images/the-museum.png" alt="museum-img" width="70%" height="70%">
+            <div class="the-museum__content__image col-6 col-lg-5">
+              <img src="static/images/the-museum.png" alt="museum-img" width="90%" height="90%">
             </div>
           </div>
         </section>
@@ -198,7 +200,7 @@
           <div class="section-title__heading col-1"><h2>CONTACT</h2></div>
         </div>
         <div class="contact__content row align-items-center justify-content-between text-start">
-          <div class="contact__content__form col-md-5 col-sm-12">
+          <div class="contact__content__form col-md-5 col-sm-12 mb-4 mb-lg-0">
             <div class="contact__content__form__title"><h3>REACH US</h3></div>
             <!-- Needs formspree link in action attribute to get functional -->
             <form action="" method="post" class="row g-3 justify-content-between" id="contact-form" onsubmit="return checkInput(this)" name="contact-form">
