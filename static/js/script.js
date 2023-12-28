@@ -34,3 +34,23 @@ function checkInput(checkform)
   return check;
 }
 
+// Sends email after succesfully submitting the Newsletter Form
+
+function sendEmail(form){
+  // Checks for correct submit of the form
+  if(checkInput(form)){
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      // Credentials from elasticemail SMTP API
+      Username : "",
+      Password : "",
+      // Email address that your elasticemail account was created (not the username)
+      From : "",
+      To : document.getElementById("newsletter-email").value,
+      Subject : "Muses Newsletter Subscription",
+      Body : "Congratulations!!! You have subscribed to Muses newsletter."
+    }).then(
+    message => alert(message)
+    );
+  }
+}

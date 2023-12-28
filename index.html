@@ -259,8 +259,8 @@
           <section class="subscribe col-4">
             <h1 class="footer-title">Subscribe</h1>
             <p class="newsletter text-wrap">Join our newsletter and be part of a world full of art.</p>
-            <form class="newsletter-form" id="newsletter-form" onsubmit="return checkInput(this)">
-              <input type="text" placeholder="email" autocomplete="off" autofocus name="Email" id="email" class="newsletter-form__email"></input>
+            <form class="newsletter-form" id="newsletter-form" onsubmit="sendEmail(this); return false;">
+              <input type="text" placeholder="email" autocomplete="off" autofocus name="Email" id="newsletter-email" class="newsletter-form__email"></input>
               <button type="submit" class="newsletter-form__submit">Submit</button>
               <hr class="newsletter-form__hr">
             </form>
