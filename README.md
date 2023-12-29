@@ -17,7 +17,7 @@
 
 ## Inspiration
 
-This project is based on a <a href="">figma design</a> provided by a professional UI-UX designer that will be used as a final project for her "Google UX Design" certificate. It's a static,single-page demonstration of a larger full stack web application of a contemporary museum that is still in progress.
+This project is based on a <a href="https://www.figma.com/file/bEZ3HklKvYy3wR3OJGKTLn/Coursera-UX-Certificate?type=design&node-id=0%3A1&mode=design&t=hJjj8fMD6y0V59CJ-1">figma design</a> provided by a professional UI-UX designer that will be used as a final project for her "Google UX Design" certificate. It's a static,single-page demonstration of a larger full stack web application of a contemporary museum that is still in progress.
 
 ## Purpose
 
@@ -47,11 +47,11 @@ Contact Form
   
 Complete the action attribute value of index.html file with a URL provided by <a href="https://formspree.io/">Formspree</a> by:
 
-- Signing up at Formspree website
-
-- Submitting the contact form at Formspree and copying the provided link to the action attribute
-
-- Checking for correct submit of the form on Formspree panel
+  - Signing up at Formspree website
+  
+  - Submitting the contact form at Formspree and copying the provided link to the action attribute
+  
+  - Checking for correct submit of the form on Formspree panel
   
 </details>
 
@@ -65,13 +65,13 @@ Newsletter Form
   
 Complete the JavaScript snippet's values above (provided by SMTP JS) found in <code>static/js/script.js</code> path by:
 
-- Signing up at <a href="https://app.elasticemail.com/">ElasticEmail</a> website
-
-- <a href="https://app.elasticemail.com/api/settings/create-smtp">Creating</a> your own SMTP API (credentials) with the email address you used to register (login required)
+  - Signing up at <a href="https://app.elasticemail.com/">ElasticEmail</a> website
   
-- Completing <code>Username:</code> and <code>Password:</code> values with the credentails provided by your SMTP API and the <code>From:</code> value with the email address you used to register.
-  
-- Checking for correct submit of the form on the inbox of the email submitted through the form.
+  - <a href="https://app.elasticemail.com/api/settings/create-smtp">Creating</a> your own SMTP API (credentials) with the email address you used to register (login required)
+    
+  - Completing <code>Username:</code> and <code>Password:</code> values with the credentails provided by your SMTP API and the <code>From:</code> value with the email address you used to register.
+    
+  - Checking for correct submit of the form on the inbox of the email submitted through the form.
   
 </details>
 
