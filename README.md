@@ -42,7 +42,7 @@ In order to try the project yourself, you'll need to implement each of the 2 for
 Contact Form
 </summary> <br />
 <p align="center">
-  <img src="for-readme/contact-form-usage.PNG" alt="contact-form-usage" width=80%>
+  <img src="for-readme/contact-form-usage.PNG" alt="contact-form-usage" width=100%>
 </p>
   
 Complete the action attribute value of index.html file with a URL provided by <a href="https://formspree.io/">Formspree</a> by:
