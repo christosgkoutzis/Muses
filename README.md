@@ -17,7 +17,7 @@
 
 ## Inspiration
 
-This project is based on a <a href="https://www.figma.com/file/bEZ3HklKvYy3wR3OJGKTLn/Coursera-UX-Certificate?type=design&node-id=0%3A1&mode=design&t=hJjj8fMD6y0V59CJ-1">figma design</a> provided by a professional UI-UX designer that will be used as a final project for her "Google UX Design" certificate. It's a static,single-page demonstration of a larger full stack web application of a contemporary museum that is still in progress.
+This project is based on a <a href="https://www.figma.com/file/bEZ3HklKvYy3wR3OJGKTLn/Coursera-UX-Certificate?type=design&node-id=0%3A1&mode=design&t=KrBammp4uRjvQlzX-1">figma design</a> provided by a professional UI-UX designer that will be used as a final project for her "Google UX Design" certificate. It's a static,single-page demonstration of a larger full stack web application of a contemporary museum that is still in progress.
 
 ## Purpose
 
