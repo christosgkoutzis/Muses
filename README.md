@@ -2,6 +2,8 @@
 
 <h3 align="center">A website for a contemporary art museum located in Athens, Greece 🗽 </h3>
 <p align="center">GitHub pages link: https://christosgkoutzis.github.io/Muses/</p>
+<p align="center">Video presentation of the project: https://www.youtube.com/watch?v=2Sv6gf_AWGg</p>
+
 
 <p align="center">
   <img src="for-readme/home.PNG" alt="dashboard" width=80%>
