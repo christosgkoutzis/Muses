@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %} Exhibition {% endblock %}
+
+{% block main %}
+
+<div class="card mb-3 w-50 mx-auto my-3">
+  <img class="card-img-top" src="{{ url_for('static', filename='images/exhibition_images/') }}{{ featured_image }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ description }}</p>
+    <p class="card-text"><small class="text-muted">{{ exhibition_date }}</small></p>
+    <a href="{{ url_for('edit', id=id) }}">Edit exhibition</a><br \>
+    <a href="{{ url_for('exhibitions') }}">Return to exhibitions</a>
+  </div>
+</div>
+{% endblock %}

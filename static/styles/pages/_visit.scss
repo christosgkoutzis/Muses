@@ -1,0 +1,31 @@
+.visit-content{
+  /* For equal width of the 2 content rows */
+  display: flex;
+}
+
+.regular-schedule, .special-cases{
+
+  &__title{
+    margin-bottom: 3vh;
+  }
+}
+
+.regular-schedule{
+  
+  &__content{
+
+    &__schedule{
+      margin-block: 4.09vh;
+    }
+  }
+}
+
+.special-cases{
+  
+  &__content{
+
+    &__schedule{
+      margin-block: 2.1vh;
+    }
+  }
+}

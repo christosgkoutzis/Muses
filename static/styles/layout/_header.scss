@@ -1,0 +1,29 @@
+header{
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-img{
+  object-fit: cover;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-nav{
+  max-height: 100vh;
+}
+
+.nav-link h4{
+  font-weight: 300;
+  color: var(--bg-white);
+}
+
+.navbar-toggler{
+  border-color: var(--bg-white);
+}
+

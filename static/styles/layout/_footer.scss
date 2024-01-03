@@ -1,0 +1,83 @@
+@use "../util/" as u;
+
+footer{
+  background-image: url('../../images/footer-bg.png');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-top: 15vh;
+  padding-bottom: 1vh;
+  padding-inline: 6vw;
+  
+}
+
+.footer-info{
+  padding-right: 5.5vw;
+}
+
+.footer-title{
+  margin-bottom: 2vw;
+}
+
+.reach-info{
+  margin-bottom: 3.92vh;
+}
+.footer-nav{
+
+  &__item{
+    /* We need this property to add margin-bottom to <a> elements */
+    display: block;
+    margin-bottom: 3.92vh;
+    color: var(--text-black);
+  }
+
+}
+.newsletter{
+  width: 15.5rem;
+  max-width: 100%;
+  margin-bottom: 3.2vh;
+}
+.newsletter-form{
+  max-width: 15.5rem;
+  /*max-width: 100%;*/
+  font-size: clamp(u.rem(8), u.rem(6) + 0.8vw, u.rem(24));
+
+  &__email{
+    max-width: 70%;
+    border: none;
+    background: transparent;
+  }
+  &__email::placeholder{
+    font-weight: 200;
+    color: var(--form-text-gray);
+  }
+  &__submit{
+    max-width: 25%;
+    border: none;
+    background: transparent;
+    font-weight: 300;
+  }
+  &__hr{
+    width: 100%;
+    background-color: var(--text-black);
+    margin-top: 1.53vh;
+  }
+}
+.footer-border{
+  margin-top: 1.53vh;
+  background-color: var(--border-gray);
+}
+
+.bottom-footer{
+  padding: 0;
+  margin-block: 3.5vh 5vh;
+}
+
+.social-icons{
+
+  &__container{
+    width: 2.18vw;
+    margin-inline: 1vw;
+  }
+  
+}

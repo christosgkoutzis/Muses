@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %} The museum {% endblock %}
+
+{% block main %}
+<div class="the-museum container-fluid d-flex justify-content-center px-0">
+  <section name="the-museum" id="the-museum" class="text-center container-fluid">
+    <div class="the-museum__content row align-items-lg-end align-items-center d-flex justify-content-between text-start">
+      <div class="the-museum__content__apps col-6 col-lg-5">
+        <div class="section-title row align-items-center">
+          <div class="section-title__line col-1"></div>
+          <div class="section-title__heading col-md-6 col-8"><h2>THE MUSEUM</h2></div>
+        </div>
+        <div class="row text-start">
+          <p class="the-museum__content__apps__download">Download our app and discover the magic of the art at the museum or anywhere else in the world.</p>
+          <p class="the-museum__content__apps__art-quizzes">Art quizzes, personalized exhibitions suggestions and an international art community are waiting for you.</p>
+        </div>
+        <div class="apps-images-inline row">
+          <div class="col-6 apps-images-inline__googleplay">
+            <img src="static/images/googleplay.png" alt="googleplay">
+          </div>
+          <div class="col-6 apps-images-inline__appstore">
+            <img src="static/images/appstore.png" alt="appstore">
+          </div>
+        </div>
+      </div>
+      <div class="the-museum__content__image col-6 col-lg-5">
+        <img src="static/images/the-museum.png" alt="museum-img" width="90%" height="90%">
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

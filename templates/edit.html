@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %} Edit {% endblock %}
+
+{% block main %}
+<form action="/exhibitions/edit/{{ id }}" method="post" class="w-75 mx-auto">
+  <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input autocomplete="off" autofocus class="form-control" id="title" name="title" placeholder="Exhibition's title" type="text" value="{{ title }}">
+  </div>
+  <div class="mb-3">
+      <label for="featured_image" class="form-label">Featured Image</label>
+      <input autocomplete="off" autofocus class="form-control" id="featured_image" name="featured_image" placeholder="Image link" type="text" value="{{ featured_image }}">
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea autocomplete="off" autofocus class="form-control" id="description" name="description" placeholder="Details about the exhibition" rows="5">{{ description }}</textarea>
+  </div>
+  <div class="mb-3">
+    <label for="exhibition_date" class="form-label">Exhibition Date</label>
+    <input autocomplete="off" autofocus class="form-control" id="exhibition_date" name="exhibition_date" placeholder="Date of the exhibition" type="text" value="{{ exhibition_date }}">
+  </div>
+  <div class="mb-3">
+    <label for="slug" class="form-label">Slug</label>
+    <input autocomplete="off" autofocus class="form-control" id="slug" name="slug" placeholder="Page's slug" type="text" value="{{ slug }}">
+  </div>
+  <div class="text-start">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</form>
+{% endblock %}

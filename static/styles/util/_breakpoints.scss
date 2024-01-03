@@ -19,14 +19,14 @@ $breakpoints-up: (
 );
 
 /* SASS mixin to use max-width breakpoints in media queries */
-@mixin breakpoint($size) {
+@mixin breakpoint-down($size) {
   @media (max-width: map-get($breakpoints-down, $size)){
     @content
   }
 };
 
 /* SASS mixin to use min-width breakpoints in media queries */
-@mixin breakpoint($size){
+@mixin breakpoint-up($size){
   @media (min-width: map-get($breakpoints-up, $size)){
     @content
   }

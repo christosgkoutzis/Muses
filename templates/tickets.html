@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %} Tickets {% endblock %}
+
+{% block main %}
+
+<section name="tickets" id="tickets" class="text-center container-fluid">
+  <div class="section-title row align-items-center">
+    <div class="section-title__line col-1"></div>
+    <div class="section-title__heading col-1"><h2>TICKETS</h2></div>
+  </div>
+  <div class="tickets__content row align-items-center text-start">
+    <div class="tickets__content__image col-md-6 col-12">
+      <img src="static/images/tickets.png" alt="tickets-img" width="90%" height="90%">
+    </div>
+    <div class="tickets__content__prices col-md-6 col-12">
+      <div class="tickets__content__prices__admissions">
+        <div class="tickets__content__prices__admissions__general row">
+          <div class="tickets__content__prices__admissions__general__title col-lg-10 col-8"><h4>General admission</h4></div>
+          <div class="tickets__content__prices__admissions__general__price col-lg-2 col-3 text-center"><h4>8 €</h4></div>
+        </div>
+        <div class="tickets__content__prices__admissions__reduced row">
+          <div class="tickets__content__prices__admissions__reduced__title col-lg-10 col-8">
+            <h4>Reduced admission</h4>
+            <p>Aged 13 - 18, university students, groups of 10 visitors or more, aged 65 or older</p>
+          </div>
+          <div class="tickets__content__prices__admissions__reduced__price d-flex align-items-center col-lg-2 col-3 justify-content-center"><h4>4 €</h4></div>
+        </div>
+        <div class="tickets__content__prices__admissions__free row">
+          <div class="tickets__content__prices__admissions__free__title col-lg-10 col-8">
+            <h4>Free entrance</h4>
+            <p>Members of the Greek Parliament, children 12 years old and under, people with disabilities, Greek citizens performing their military service, employees of the Hellenic Ministry of Culture with current working identification card.</p>
+          </div>
+          <div class="tickets__content__prices__admissions__free__price d-flex align-items-center col-lg-2 col-3 justify-content-center"><h4>0 €</h4></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

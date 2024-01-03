@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %} Visit {% endblock %}
+
+{% block main %}
+
+<section id="visit" name="visit" class="text-center container-fluid">
+  <div class="section-title row align-items-center">
+    <div class="section-title__line col-1"></div>
+    <div class="section-title__heading col-1"><h2>VISIT</h2></div>
+  </div>
+  <div class="row">
+    <div class="visit-subtitles col-lg-6 col-12 align-items-center text-start">
+      <div class="regular-schedule__title"><h4>Regular Schedule</h4></div>
+      <div class="visit-content text-start">
+        <div class="regular-schedule">
+          <div class="regular-schedule__content">
+            <div class="regular-schedule__content__schedule row">
+              <div class="regular-schedule__content__schedule__day col-6"><p>Monday</p></div>
+              <div class="regular-schedule__content__schedule__hours col-6"><p>Closed</p></div>
+            </div>
+            <div class="regular-schedule__content__schedule row">
+              <div class="regular-schedule__content__schedule__day col-6"><p>Tuesday - Wednesday</p></div>
+              <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
+            </div>
+            <div class="regular-schedule__content__schedule row">
+              <div class="regular-schedule__content__schedule__day col-6"><p>Thursday</p></div>
+              <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 8:00 pm</p></div>
+            </div>
+            <div class="regular-schedule__content__schedule row">
+              <div class="regular-schedule__content__schedule__day col-6"><p>Friday - Sunday</p></div>
+              <div class="regular-schedule__content__schedule__hours col-6"><p>10:00 am – 6:00 pm</p></div>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+    <div class="visit-subtitles align-items-center col-lg-6 col-12 text-start">
+      <div class="special-cases__title"><h4>Special Cases</h4></div>
+      <div class="special-cases__content">
+        <div class="special-cases__content__schedule row">
+          <div class="special-cases__content__schedule__day col-5"><p>Closed</p></div>
+          <div class="special-cases__content__schedule__hours col-7"><p>01/01, Orthodox Easter Sunday, 01/05, 25-26/12</p></div>
+        </div>
+        <div class="special-cases__content__schedule row">
+          <div class="special-cases__content__schedule__day col-5"><p>Reduced hours</p></div>
+          <div class="special-cases__content__schedule__hours col-7">
+            <p>24/12 & 31/12, 9 am - 3 pm.</p>
+            <p>Orthodox Good Friday, 12 am - 6 pm.</p>
+            <p>Orthodox Holy Saturday, 9 am - 3 pm.</p>
+          </div>
+        </div>
+        <div class="special-cases__content__schedule row">
+          <div class="special-cases__content__schedule__day col-5"><p>Extended opening hours</p></div>
+          <div class="special-cases__content__schedule__hours col-7"><p>Evenings of the August full moon & European Night of Museums, open until midnight.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

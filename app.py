@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template, request, session
+from flask import Flask, redirect, render_template, request, session, url_for
 from flask_session import Session
 from cs50 import SQL
 from datetime import datetime
@@ -63,8 +63,31 @@ def single(id):
    exhibition_date = exhibition[0]["exhibition_date"]
    if len(exhibition) != 1:
       return render_template("404.html"), 404
-   return render_template("exhibition.html", title=title, description=description, featured_image=featured_image, exhibition_date=exhibition_date)
+   return render_template("exhibition.html",id=id, title=title, description=description, featured_image=featured_image, exhibition_date=exhibition_date)
 
+# Route to edit exhibitions
+@app.route('/exhibitions/edit/<int:id>', methods=['GET', 'POST'])
+@login_required
+def edit(id):
+  exhibition = db.execute("SELECT * FROM exhibitions WHERE id = ?", id)
+  if len(exhibition) != 1:
+    return render_template("404.html"), 404
+  if request.method == "POST":
+    title = request.form.get("title")
+    featured_image = request.form.get("featured_image")
+    description = request.form.get("description")
+    exhibition_date = request.form.get("exhibition_date")
+    slug = request.form.get("slug")
+    db.execute("UPDATE exhibitions SET title = ?, description = ?, featured_image = ?, exhibition_date = ?, slug = ? WHERE id = ?", title, description, featured_image, exhibition_date, slug, id)
+    return redirect(url_for('single', id=id))
+  else:
+    title = exhibition[0]["title"]
+    description = exhibition[0]["description"]
+    featured_image = exhibition[0]["featured_image"]
+    exhibition_date = exhibition[0]["exhibition_date"]
+    slug = exhibition[0]["slug"]
+    return render_template("edit.html", title=title, description=description, featured_image=featured_image, exhibition_date=exhibition_date, slug=slug, id=id)
+   
 @app.route('/new_exhibition', methods=["GET", "POST"])
 @login_required
 # Adds a new exhibition to the website through a form
@@ -87,16 +110,16 @@ def login():
 
   # Admin reached route via POST (as by submitting a form via POST)
   if request.method == "POST":
-      if not request.form.get("username") or not request.form.get("password"):
+      if not request.form.get("Username") or not request.form.get("Password"):
         return render_template('admin.html')
       # Query database for admin's username
       rows = db.execute(
-          "SELECT * FROM admin_credentials WHERE username = ?", request.form.get("username")
+          "SELECT * FROM admin_credentials WHERE username = ?", request.form.get("Username")
       )
 
       # Ensure username exists and password is correct
       if len(rows) != 1 or not check_password_hash(
-          rows[0]["password"], request.form.get("password")
+          rows[0]["password"], request.form.get("Password")
       ):
           return render_template('500.html'), 500
 
