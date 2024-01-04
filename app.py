@@ -1,9 +1,9 @@
-from flask import Flask, redirect, render_template, request, session, url_for
+from flask import Flask, redirect, render_template, request, session, url_for, flash
 from flask_session import Session
 from cs50 import SQL
 from datetime import datetime
 from functools import wraps
-from werkzeug.security import check_password_hash, generate_password_hash
+from werkzeug.security import check_password_hash
 
 # Create a Flask instance
 app = Flask (__name__)
@@ -87,6 +87,16 @@ def edit(id):
     exhibition_date = exhibition[0]["exhibition_date"]
     slug = exhibition[0]["slug"]
     return render_template("edit.html", title=title, description=description, featured_image=featured_image, exhibition_date=exhibition_date, slug=slug, id=id)
+
+# Route to delete exhibitions
+@app.route('/exhibitions/delete/<int:id>')
+@login_required
+def delete(id):
+  try:
+    db.execute("DELETE FROM exhibitions WHERE id = ?", id)
+  except:
+    return render_template("500.html"), 500
+  return exhibitions()  
    
 @app.route('/new_exhibition', methods=["GET", "POST"])
 @login_required

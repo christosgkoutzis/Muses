@@ -12,7 +12,8 @@
         <p class="card-text">{{ exhibition.description }}</p>
         <p class="card-text"><small class="text-muted">{{ exhibition.exhibition_date }}</small></p>
         <a href="{{ url_for('single', id=exhibition.id) }}">View exhibition</a><br \>
-        <a href="{{ url_for('edit', id=exhibition.id) }}">Edit exhibition</a>
+        <a href="{{ url_for('edit', id=exhibition.id) }}">Edit exhibition</a><br \>
+        <a href="{{ url_for('delete', id=exhibition.id) }}">Delete exhibition</a>
       </div>
     </div>
     <hr><br \>
